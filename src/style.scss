@@ -1,0 +1,257 @@
+/**
+ * Bela – an alternative theme for your “Facebook Archive”
+ *
+ * This CSS file is a replacement for the one provided by Facebook.
+ * Just replace the existing “style.css” (located in the “html” folder
+ * of your Facebook archive) with this one and you’re good to go.
+ *
+ * No idea how to get your archive?
+ * Please read “How can I download my information from Facebook?”:
+ * https://www.facebook.com/help/212802592074644.
+ *
+ * @project   Bela
+ * @version   1.0
+ * @author    Fabian Beiner <fb@fabianbeiner.de>
+ * @license   CC BY 4.0 - http://creativecommons.org/licenses/by/4.0/
+ */
+// I’m not a designer. So I flipped a coin between Roboto and Open Sans… :-)
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic);
+
+html {
+  background: #FAFAFA;
+  height: 100%;
+}
+
+body {
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  padding: 0 0 0 243px;
+  position: relative;
+}
+
+a {
+  color: #0091EA;
+  text-decoration: none;
+
+  &:hover, &:focus, &:active {
+    color: #00B0FF
+  }
+}
+
+.nav {
+  background: #FFF;
+  border-right: 1px #DBDBDB solid;
+  bottom: 0;
+  font-size: 0.875em;
+  left: 0;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  width: 242px;
+
+  img {
+    border: 1px #DBDBDB solid;
+    display: block;
+    margin: 20px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline
+  }
+
+  a, .selected {
+    color: #333;
+    display: block;
+    padding: 9px 0 10px 19px;
+    text-decoration: none;
+
+    &:hover, &:focus, &:active {
+      background: #EEE
+    }
+  }
+
+  .selected {
+    color: #0091EA;
+    font-weight: 700;
+
+    &:hover, &:focus, &:active {
+      background: inherit
+    }
+  }
+}
+
+.contents {
+  margin: 40px auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+h1, h2 {
+  color: #0091EA;
+  font-size: 2.125em;
+  font-weight: 400;
+  margin: 0 0 1em 0;
+}
+
+h2 {
+  font-size: 1.5em
+}
+
+p {
+  border-bottom: 1px #E3E3E3 solid;
+  padding-bottom: 0;
+}
+
+p:last-of-type {
+  border-bottom: none;
+}
+
+p:empty, li:empty {
+  display: none
+}
+
+.meta {
+  font-size: 0.75em;
+}
+
+.comment {
+  background: #FFF;
+  border-radius: 5px;
+  color: #0091EA;
+  font-style: italic;
+  margin: 14px 20px 20px 20px;
+  padding: 4px 9px 4px 29px;
+  position: relative;
+
+  &:before {
+    color: #333;
+    content: "“";
+    font-size: 3em;
+    left: 4px;
+    line-height: 1em;
+    position: absolute;
+    top: 2px;
+  }
+}
+
+table {
+  background: #FFF;
+  border: 1px #E3E3E3 solid;
+  border-radius: 5px;
+  border-spacing: 0;
+  margin: 0 0 20px 0;
+  overflow: hidden;
+  text-align: left;
+  width: 100%;
+
+  tr:hover {
+    background: #EEE !important
+  }
+
+  td, th {
+    border-bottom: 1px #E3E3E3 solid;
+    padding: 15px 19px 15px 19px;
+    vertical-align: top;
+  }
+
+  th {
+    font-weight: 700;
+    width: auto !important;
+  }
+
+  ul {
+    line-height: 1.2;
+    margin: 2px 0 1px 18px;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 8px
+  }
+
+  li:last-of-type {
+    margin-bottom: 0
+  }
+
+  p {
+    padding-bottom: 16px
+  }
+
+  p:last-of-type {
+    padding-bottom: inherit
+  }
+}
+
+.footer {
+  font-size: 0.75em;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 6px 0 7px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.block {
+  border-bottom: 1px #E3E3E3 solid;
+  margin: 0 0 20px 0;
+  padding: 20px 0;
+
+  img {
+    border: 1px #DBDBDB solid;
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  .user {
+    display: block;
+    font-weight: 700;
+  }
+}
+
+.thread {
+  background: #FFF;
+  border: 1px #E3E3E3 solid;
+  border-radius: 5px;
+  color: #0091EA;
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  overflow: hidden;
+  padding: 20px;
+  text-align: left;
+  width: 100%;
+
+  .message, p {
+    color: #333;
+    font-size: 0.66667em;
+    margin-left: 20px;
+  }
+
+  .message + p {
+    border-bottom: 0;
+    margin: 0 40px 10px;
+  }
+
+  .message:first-child {
+    margin-top: 20px
+  }
+
+  .user {
+    color: #0091EA
+  }
+
+  .meta:before {
+    content: " ("
+  }
+
+  .meta:after {
+    content: ")"
+  }
+}
