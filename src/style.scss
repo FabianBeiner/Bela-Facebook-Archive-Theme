@@ -1,21 +1,21 @@
 /**
- * Bela – an alternative theme for your “Facebook Archive”
+ * Bela ― An alternative style for your “Facebook Archive”
  *
- * This CSS file is a replacement for the one provided by Facebook.
- * Just replace the existing “style.css” (located in the “html” folder
- * of your Facebook archive) with this one and you’re good to go.
+ * This CSS file replaces the original file from Facebook.
+ * Simply overwrite the existing “style.css” (located in the “html” folder)
+ * with the new version from “dist”. That’s it!
  *
- * No idea how to get your archive?
- * Please read “How can I download my information from Facebook?”:
- * https://www.facebook.com/help/212802592074644.
+ * If you don’t know how to get to your personal archive, make  sure to check
+ * the following link: https://www.facebook.com/help/212802592074644
  *
- * @project   Bela
- * @version   1.0
- * @author    Fabian Beiner <fb@fabianbeiner.de>
- * @license   CC BY 4.0 - http://creativecommons.org/licenses/by/4.0/
+ * @project Bela (“Bela” means beautiful in Esperanto)
+ * @version 1.0.1
+ * @author  Fabian Beiner <fb@fabianbeiner.de>
+ * @license The MIT License (MIT), see LICENSE.md
  */
-// I’m not a designer. So I flipped a coin between Roboto and Open Sans… :-)
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic);
+
+// I flipped a coin: Roboto or Open Sans…
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700);
 
 html {
   background: #FAFAFA;
@@ -28,12 +28,12 @@ body {
   font-size: 100%;
   line-height: 1.5;
   padding: 0 0 0 243px;
-  position: relative;
 }
 
 a {
   color: #0091EA;
   text-decoration: none;
+  transition: all .2s;
 
   &:hover, &:focus, &:active {
     color: #00B0FF
@@ -73,7 +73,8 @@ a {
     text-decoration: none;
 
     &:hover, &:focus, &:active {
-      background: #EEE
+      background: #EEE;
+      transition: all .2s;
     }
   }
 
@@ -131,10 +132,10 @@ p:empty, li:empty {
   position: relative;
 
   &:before {
-    color: #333;
+    color: #0091EA;
     content: "“";
-    font-size: 3em;
-    left: 4px;
+    font-size: 2em;
+    left: 7px;
     line-height: 1em;
     position: absolute;
     top: 2px;
@@ -152,7 +153,8 @@ table {
   width: 100%;
 
   tr:hover {
-    background: #EEE !important
+    background: #EEE !important;
+    transition: all .2s;
   }
 
   td, th {
